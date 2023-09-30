@@ -1,0 +1,20 @@
+{
+  "name": "gamma-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "cleanup": "rmdir /s /q .parcel-cache dist",
+    "start": "parcel ./*.html ./*/*.html --no-cache",
+    "build": "parcel build ./*.html ./*/*.html --no-cache --dist-dir ./build",
+    "chkfmt": "npx prettier --check .",
+    "fmt": "npx prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "pretty": "^2.0.0",
+    "pretty-quick": "^3.1.3"
+  },
+  "dependencies": {}
+}
